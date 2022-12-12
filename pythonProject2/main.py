@@ -14,7 +14,7 @@ app = Flask(__name__,
 
 CORS(app, support_credentials=True)
 DIR_PATH = dir_path = os.path.dirname(os.path.realpath(__file__))
-new_model = tf.keras.models.load_model(os.path.join(DIR_PATH, f'content/best_model'))
+new_model = tf.keras.models.load_model(os.path.join(DIR_PATH, f'content/best_model.h5'))
 
 
 @app.route('/predict/<string:image_id>', methods=['GET'])
