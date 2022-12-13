@@ -3,7 +3,7 @@ google-auth==2.15.0
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 googledrivedownloader==0.4
-numpy==1.23.5
+numpy==1.21.5
 opencv-python==4.5.5.64
 Pillow==9.3.0
 tensorflow==2.11.0
