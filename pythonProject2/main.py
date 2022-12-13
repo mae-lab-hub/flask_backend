@@ -36,9 +36,11 @@ def predict(image_id):
     bean_prediction = classes[prediction.argmax()]
 
     os.remove(os.path.join(DIR_PATH, f'imgs/{image_id}'))
+    
+    response = {'bean': bean_prediction}
+    response.headers.add('Access-Control-Allow-Origin', '*')
 
-
-    return {'bean': bean_prediction}
+    return response
 
 
 if __name__ == '__main__':
